@@ -13,14 +13,17 @@
     </head>
 <body>
     <!-- header -->
-    <header class="flex items-center justify-between p-[16px]">
+    <header class="flex items-center justify-between p-[8px]">
         <!-- Logo Icon -->
-        <div class="bg-green-500 rounded-full h-[75px] w-[75px]"></div>
-        <nav>
+         <table border="0">
+            <td class="logo"> <img src="foto/rizky.png" alt="foto" class="rounded-full h-[75px] w-[75px]"></td>
+         <td class="text-gray-900 font-bold text-center">Muhammad Rizky Addawami, S. M.</td>
+        </table>
+         <nav>
             <ul class="flex gap-[8px]">
                 <li><a href="#home-page" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-green-500">Home</a></li>
                 <li><a href="#our-profile" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-green-500">Our Profile</a></li>
-                <li><a href="#portofolio" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-green-500">Portofolio</a></li>
+                <li><a href="#porto-folio" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-green-500">Portofolio</a></li>
                 <li><a href="#message-us" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-green-500">Message Us</a></li>
             </ul>
         </nav>
@@ -40,10 +43,10 @@
             <header>
                   <h1 class="text-4xl font-bold text-gray-800">Our Profile</h1> 
             </header>           
-            <p class="text-gray-600">Kita Kerja Bersama</p>
+            <p class="text-gray-600 text-justify">Saya merupakan Chief Executive Officer dari Prospect.Co. Pengalaman kerja yang saya miliki dimulai dari Lembaga Bimbingan Belajar, </p>
         </section>
         <hr/>
-        <section id="Portofolio" class="text-center h-[400px] bg-gray-100">
+        <section id="porto-folio" class="text-center h-[400px] bg-gray-100">
            <header>
                   <h1 class="text-4xl font-bold text-gray-800">Portofolio</h1> 
             </header>           
@@ -52,15 +55,29 @@
         <hr/>
         <section id="message-us" class="text-center h-[400px] bg-gray-500">
              <header>
-                  <h1 class="text-4xl font-bold text-gray-800">Our Profile</h1> 
+                  <h1 class="text-4xl font-bold text-gray-800">Message Us</h1> 
             </header>
             
             <form>
+                <label for="user-name" class="block text-gray-700">Your Name</label>
+                <input id="user-name" type="text" class="border rounded-md w-full p-2"></textarea>
+                
                 <label for="user-message" class="block text-gray-700">Your Message</label>
                 <input id="user-message" type="text" class="border rounded-md w-full p-2"></textarea>
+                
+                 <p>Gender :</p>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+            
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <br> 
+
+                <label for="">Date Of Birth:</label>
+                <input type="date" id="dob" name="dob"><br>
+
                 <button type="button" onclick="sendmessage();" class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-md">Send</button>
             </form>
-            <p class="text-gray-600">Kita Kerja Bersama</p>
         </section>
     </main>
 
