@@ -4,9 +4,21 @@ welcomespeech();
 function welcomespeech(){
     let userName = prompt ("Siapa Nama Anda?");
     if (userName != '') {
+        let hours = new Date().getHours();
+  let timeGreeting = "";
+
+  if (hours < 12) {
+    timeGreeting = "Morning";
+  } else if (hours < 18) {
+    timeGreeting = "Afternoon";
+  } else {
+    timeGreeting = "Evening";
+  }
+        document.getElementById("time-greeting").textContent = timeGreeting + ",";
         document.getElementById('user-greeting').textContent = userName; 
     }
 }
+
 
 function sendmessage(){
     let message = document.getElementById('user-message').value;
